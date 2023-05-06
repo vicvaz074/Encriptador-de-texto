@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Encriptador de Texto</h1>
+
+  <label for="inputText">Texto a encriptar/desencriptar:</label>
+  <input type="text" id="inputText">
+  <br>
+  <label for="mode">Modo:</label>
+  <select id="mode">
+    <option value="encrypt">Encriptar</option>
+    <option value="decrypt">Desencriptar</option>
+  </select>
+  <button onclick="processText()">Procesar</button>
+
+  <h3>Texto procesado:</h3>
+  <textarea id="processedText" readonly></textarea>
+  <button onclick="copyToClipboard()">Copiar</button>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>Todos los derechos reservados &copy; Vicente Vázquez Ramírez</p>
+  </footer>
+</body>
+</html>
